@@ -19,7 +19,7 @@
         
             <div class="flex gap-4 mt-8">
                 <button  class="rounded-2xl">Disponible pour un stage →</button>
-                <button class="btn-outline rounded-2xl">Voir mes projets</button>
+                <button class="btn-outline rounded-2xl blue-color"><a href="#projets">Voir mes projets</a></button>
             </div>
         
         </div>
@@ -32,8 +32,12 @@
             </ul>
 
             <div class="flex gap-4 mt-6">
-                <button class="btn-ghost-icon"><i class="fa-brands fa-github"></i></button>
-                <button class="btn-ghost-icon"><i class="fa-brands fa-linkedin"></i></button>
+                <a class="btn-ghost-icon" href="https://github.com/Merveille-pharel1" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a class="btn-ghost-icon" href="https://www.linkedin.com/in/pharel-kamga-253963318/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </div>
             
             
@@ -66,7 +70,7 @@
 <section class="bg-slate-900/40 py-20">
     <div class="max-w-6xl mx-auto px-8">
         <h2 class="text-3xl font-bold mb-12 text-slate-100">
-        Compétences techniques
+        Compétences
         </h2>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -132,11 +136,224 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
+    
+<section class="bg-slate-900/40 py-20">
+    <div class="max-w-6xl mx-auto px-8">
+        <h2 class="text-3xl font-bold text-slate-100 mb-12">🎓 Formations</h2>
+    </div>
+    <div class="max-w-6xl mx-auto px-8">
+        <p class="max-w-3xl border border-slate-700 bg-slate-900 rounded-2xl p-6 mb-7 ml-3 transition-transform hover:-translate-x-3">
+            <span class="blue-color font-bold">DEC - Techniques de l'informatique, Programmeur-Analyste</span>
+            , Cégep de Shawinigan, <span class="text-slate-300"> Québec (en cours).</span>
+        </p>
+
+        <p class="max-w-3xl border border-slate-700 bg-slate-900 rounded-2xl p-6 mb-12 ml-3 transition-transform hover:-translate-x-3">
+            <span class="blue-color font-bold">Baccalaureat - Mathématique appliqué aux sciences actuarielles</span>
+            , Institut Universitaire de la Côte <span class="text-slate-300"> Douala, Cameroun</span>.
+        </p>
+
+    <a id="cv-action" href="docs/CV.pdf" class="btn-outline btn-cv rounded-2xl p-3 max-w-64 ml-3 inline-block transform transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download blue-color"></i> Télécharger mon CV</a>
+
+    </div>
+</section>
+
+<section id="projets" class="bg-slate-900/40 py-20">
+    <div class="max-w-6xl mx-auto px-8">
+        <h2 class="font-bold text-3xl">Mes Projets</h2>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-8 mt-8">
+        <p class="text-slate-300 max-w-2xl">Voici quelques projets sur lesquels j'ai travaillé. Chaque carte présente une courte description, les technologies utilisées et des liens vers le code ou la démo.</p>
+
+        <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+             <!-- Project card 1 - userAuth -->
+            <article class="transition-transform hover:-translate-y-2 bg-slate-900/70 border border-slate-700 rounded-3xl overflow-hidden shadow-lg">
+                <div class="h-48 overflow-hidden">
+                    <img class="w-full h-full project-card-img" src="docs/images/userAuth.png" alt="Aperçu userAuth">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-slate-100">userAuth</h3>
+                    <p class="mt-2 text-slate-300 text-sm leading-relaxed">Système d'authentification utilisateur full‑stack. Utilisation de sessions Rack pour gérer la connexion, hashing sécurisé des mots de passe, protection CSRF, configuration des cookies (HttpOnly, Secure, SameSite).</p>
+
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="project-badge text-xs">HTML</span>
+                        <span class="project-badge text-xs">CSS</span>
+                        <span class="project-badge text-xs">JavaScript</span>
+                        <span class="project-badge text-xs">Ruby</span>
+                        <span class="project-badge text-xs">Rack::Session</span>
+                        <span class="project-badge text-xs">JSON</span>
+                    </div>
+
+                    <div class="mt-4 flex gap-3 items-center">
+                        <a id="auth-code-link" class="inline-flex items-center gap-2 rounded-full px-3 py-2 bg-slate-800/60 border border-slate-700 text-slate-100 hover:bg-slate-700 transition" href="https://github.com/Merveille-pharel1/userAuth" target="_blank" rel="noopener" title="Lien vers le code">Code <i class="fa-brands fa-github"></i></a>
+                        <a id="auth-demo-link" class="inline-flex items-center gap-2 rounded-full px-3 py-2 bg-slate-800/60 border border-slate-700 text-slate-100 hover:bg-slate-700 transition" href="https://merveille-pharel1.github.io/userAuth/" target="_blank" rel="noopener" title="Lien vers la démo">Démo</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project card 2 - filesTransformer -->
+            <article class="transition-transform hover:-translate-y-2 bg-slate-900/70 border border-slate-700 rounded-3xl overflow-hidden shadow-lg">
+                <div class="h-48 overflow-hidden">
+                    <img class="w-full h-full project-card-img" src="docs/images/filesTransformer.png" alt="Aperçu filesTransformer">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-slate-100">filesTransformer</h3>
+                    <p class="mt-2 text-slate-300 text-sm leading-relaxed">Outil de transformation de fichiers avec le client qui permet d'uploader un fichier et le serveur applique l'outil <code>jc</code> pour convertir les données. Authentification basique (Rack::Auth) utilisée pour sécuriser l'API.</p>
+
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="project-badge text-xs">HTML</span>
+                        <span class="project-badge text-xs">CSS</span>
+                        <span class="project-badge text-xs">JavaScript</span>
+                        <span class="project-badge text-xs">Ruby</span>
+                        <span class="project-badge text-xs">JSON</span>
+                    </div>
+
+                    <div class="mt-4 flex gap-3 items-center">
+                        <a id="files-code-link" class="inline-flex items-center gap-2 rounded-full px-3 py-2 bg-slate-800/60 border border-slate-700 text-slate-100 hover:bg-slate-700 transition" href="https://github.com/Merveille-pharel1/filesTransformer" target="_blank" rel="noopener" title="Lien vers le code">Code <i class="fa-brands fa-github"></i></a>
+                        <a id="files-demo-link" class="inline-flex items-center gap-2 rounded-full px-3 py-2 bg-slate-800/60 border border-slate-700 text-slate-100 hover:bg-slate-700 transition" href="https://merveille-pharel1.github.io/filesTransformer/" target="_blank" rel="noopener" title="Lien vers la démo">Démo</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project card 3 - tasksManager -->
+            <article class="transition-transform hover:-translate-y-2 bg-slate-900/70 border border-slate-700 rounded-3xl overflow-hidden shadow-lg">
+                <div class="h-48 overflow-hidden">
+                    <img class="w-full h-full project-card-img" src="docs/images/TasksManager.png" alt="Aperçu tasksManager">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-slate-100">tasksManager</h3>
+                    <p class="mt-2 text-slate-300 text-sm leading-relaxed">Gestionnaire de tâches full‑stack : client minimal et serveur Ruby qui gère l'ajout, la modification, la suppression et enregistre les données dans un fichier JSON structuré.</p>
+
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="project-badge text-xs">HTML</span>
+                        <span class="project-badge text-xs">JavaScript</span>
+                        <span class="project-badge text-xs">CSS</span>
+                        <span class="project-badge text-xs">Ruby</span>
+                        <span class="project-badge text-xs">JSON</span>
+                    </div>
+
+                    <div class="mt-4 flex gap-3 items-center">
+                        <a id="tasks-code-link" class="inline-flex items-center gap-2 rounded-full px-3 py-2 bg-slate-800/60 border border-slate-700 text-slate-100 hover:bg-slate-700 transition" href="https://github.com/Merveille-pharel1/tasksManager" target="_blank" rel="noopener" title="Lien vers le code">Code <i class="fa-brands fa-github"></i></a>
+                        <a id="tasks-demo-link" class="inline-flex items-center gap-2 rounded-full px-3 py-2 bg-slate-800/60 border border-slate-700 text-slate-100 hover:bg-slate-700 transition" href="https://merveille-pharel1.github.io/tasksManager/" target="_blank" rel="noopener" title="Lien vers la démo">Démo</a>
+                    </div>
+                </div>
+            </article>
+                <!-- Project card 4 - RoboTracker -->
+                <article class="transition-transform hover:-translate-y-2 bg-slate-900/70 border border-slate-700 rounded-3xl overflow-hidden shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img class="w-full h-full project-card-img" src="docs/images/RoboTracker.png" alt="Aperçu RoboTracker">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-slate-100">RoboTracker</h3>
+                        <p class="mt-2 text-slate-300 text-sm leading-relaxed">Robot qui suit des tracés, gère des embranchements, transporte un objet vers un casier et envoie des données de télémétrie via port série pour analyses. L'interface utilisateur et la gestion du mode manuel(WASD) sont développées en python</p>
+
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="project-badge text-xs">Arduino</span>
+                            <span class="project-badge text-xs">C++</span>
+                            <span class="project-badge text-xs">Robotique</span>
+                            <span class="project-badge text-xs">Python</span>
+                            <span class="project-badge text-xs">Machine à états</span>
+                        </div>
+
+                        <div class="mt-4 flex gap-3 items-center">
+                            <a id="robo-code-link" class="inline-flex items-center gap-2 rounded-full px-3 py-2 bg-slate-800/60 border border-slate-700 text-slate-100 hover:bg-slate-700 transition" href="https://github.com/Merveille-pharel1/Labo_robotique/tree/main/robot_projet_session" target="_blank" rel="noopener" title="Lien vers le code">Code <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+            <!-- Project card 5 - Porte Automatique -->
+            <article class="transition-transform hover:-translate-y-2 bg-slate-900/70 border border-slate-700 rounded-3xl overflow-hidden shadow-lg">
+                <div class="h-48 overflow-hidden">
+                    <img class="w-full h-full project-card-img" src="docs/images/AutomaticDoor.png" alt="Aperçu myHouse">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-slate-100">Automatic Door</h3>
+                    <p class="mt-2 text-slate-300 text-sm leading-relaxed">Projet embarqué intégrant contrôle d’un moteur pas‑à‑pas via capteur de distance, système d’alarme (LED RGB + buzzer), communication série bidirectionnelle et refactorisation en classes, avec ajout final de connectivité Internet via MQTT.</p>
+
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="project-badge text-xs">Arduino</span>
+                        <span class="project-badge text-xs">C++</span>
+                        <span class="project-badge text-xs">Stepper</span>
+                        <span class="project-badge text-xs">Ultrason</span>
+                        <span class="project-badge text-xs">MQTT</span>
+                        <span class="project-badge text-xs">Serial</span>
+                    </div>
+
+                    <div class="mt-4 flex gap-3 items-center">
+                        <a id="myhouse-code-link" class="inline-flex items-center gap-2 rounded-full px-3 py-2 bg-slate-800/60 border border-slate-700 text-slate-100 hover:bg-slate-700 transition" href="https://github.com/Merveille-pharel1/0sx_final" target="_blank" rel="noopener" title="Lien vers le code">Code <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+
+    </div>
+
+</section>
 
     
+    <footer class="site-footer bg-slate-900/60 border-t border-slate-700 mt-12">
+        <div class="max-w-6xl mx-auto px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-left">
+                <h4 class="text-lg font-semibold text-slate-100">Pharel Kamga</h4>
+                <p class="text-slate-300 text-sm">Développeur full-stack — disponible pour stage</p>
+                <p class="text-slate-400 text-sm mt-2">📧 <a href="mailto:pharelkamga777@gmail.com" class="underline">pharelkamga777@gmail.com</a></p>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a class="inline-flex items-center gap-2 text-slate-200 hover:text-white" href="https://github.com/Merveille-pharel1" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                    <span class="hidden sm:inline">Github</span>
+                </a>
+                <a class="inline-flex items-center gap-2 text-slate-200 hover:text-white" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span class="hidden sm:inline">LinkedIn</span>
+                </a>
+            </div>
+
+            <div class="text-right">
+                <a href="#" class="text-slate-300 hover:text-white text-sm">Back to top ↑</a>
+                <p class="text-slate-500 text-xs mt-2">© <span id="year">2027</span> Pharel Kamga</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // set year in footer
+        (function(){
+            var el = document.getElementById('year');
+            if(el) el.textContent = new Date().getFullYear();
+
+            
+            var cvLink = document.getElementById('cv-action');
+            if(cvLink){
+                cvLink.addEventListener('click', function(e){
+                    
+                    try{
+                        var url = this.href;
+                        
+                        window.open(url, '_blank');
+
+                        var a = document.createElement('a');
+
+                        a.href = url;
+                        a.download = 'Pharel_Kamga_CV.pdf';
+                        document.body.appendChild(a);
+                        a.click();
+                        a.remove();
+                        e.preventDefault();
+                    }catch(err){
+                        console.warn('CV open+download failed, falling back to default link', err);
+                    }
+                });
+            }
+        })();
+    </script>
+
 </body>
 </html>
