@@ -97,6 +97,21 @@ article:hover .project-card-img{
   color: transparent;
 }
 
+/* Project title styling (global) */
+.project-title{
+  text-align: center !important;
+  color: #60a5fa; /* fallback */
+  background: linear-gradient(90deg, #60a5fa 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: filter 0.2s ease, transform 0.15s ease;
+}
+.project-title:hover{
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
 .site-footer{ background: rgba(15,23,42,0.6); }
 .site-footer a{ text-decoration: none; }
 .site-footer .fa-brands{ font-size: 1.15rem; color: #cbd5e1; }
@@ -104,6 +119,65 @@ article:hover .project-card-img{
 .site-footer .text-slate-500{ color: #94a3b8; }
 .site-footer .underline{ text-decoration: underline; text-decoration-color: rgba(99,102,241,0.12); }
 .site-footer a:hover .fa-brands{ color: #fff; }
+
+
+/* Responsive text alignment improvements for small screens */
+@media (max-width: 640px) {
+  /* Center hero/profile blocks for better mobile presentation */
+  .fade-up, .fade-scale {
+    text-align: center;
+  }
+  
+
+  /* Do NOT center header elements on mobile per user's request */
+  .fade-up h1,
+  .fade-up h2,
+  .fade-up h3,
+  .fade-scale h1,
+  .fade-scale h2,
+  .fade-scale h3,
+  h1,h2,h3,h4,h5,h6 {
+    text-align: left !important;
+  }
+
+  /* Make the large H1 fit nicer on phones */
+  .fade-up h1 {
+    font-size: 2rem; /* ~32px */
+    line-height: 1.05;
+    margin-bottom: 0.4rem;
+  }
+
+  /* Reduce horizontal padding on the main containers so text lines are shorter */
+  .max-w-6xl.mx-auto.px-8, .max-w-6xl.mx-auto.px-8.py-20 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Ensure profile and card texts remain left-aligned for readability, while headings are centered */
+  .p-6, .p-10, .text-slate-300, .project-badge {
+    text-align: left;
+  }
+
+  /* Stack footer content and center it */
+  .site-footer .max-w-6xl {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .site-footer .text-left, .site-footer .text-right { text-align: center; }
+
+  /* Make the back-to-top and small footer text more readable */
+  .site-footer .text-slate-500 { display: block; margin-top: 0.5rem; }
+
+  /* Slightly reduce project card image hover scale on small screens */
+  article:hover .project-card-img{ transform: scale(1.0); }
+}
+
+/* Medium screens tweaks (tablets) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .fade-up h1 { font-size: 2.6rem; }
+  .max-w-6xl.mx-auto.px-8 { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
 
 
 
